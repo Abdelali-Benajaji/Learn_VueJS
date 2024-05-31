@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyfe Cycles in Vue JS</title>
+</head>
+<style>
+    .box{
+        width: 80%;
+        height: 80vh;
+        background-color: red;
+    }
+</style>
+<body>
+    <div id="app" v-cloak>
+        <button @click="toggleBox">Show Box</button>
+
+        <test-box v-if="isVisible"/>
+    </div>
+</body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="lifeCycle.js"></script>
+</html>
